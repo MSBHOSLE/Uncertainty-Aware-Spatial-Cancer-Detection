@@ -1,0 +1,101 @@
+{
+  "total_patches": 50,
+  "total_pixel_errors": 72373.0,
+  "budgets": {
+    "5%": {
+      "budget_fraction": 0.05,
+      "patches_reviewed": 2,
+      "uncertainty_guided": {
+        "errors_caught": 2481.0,
+        "residual_errors": 69892.0,
+        "error_catch_rate": 0.03428074005499288
+      },
+      "random": {
+        "errors_caught": 2870.2,
+        "residual_errors": 69502.8,
+        "error_catch_rate": 0.03965843615713042
+      },
+      "oracle": {
+        "errors_caught": 5329.0,
+        "error_catch_rate": 0.07363243198430354
+      },
+      "efficiency_gain_ratio": 0.8643996934011567
+    },
+    "10%": {
+      "budget_fraction": 0.1,
+      "patches_reviewed": 5,
+      "uncertainty_guided": {
+        "errors_caught": 9317.0,
+        "residual_errors": 63056.0,
+        "error_catch_rate": 0.128735854531386
+      },
+      "random": {
+        "errors_caught": 6166.0,
+        "residual_errors": 66207.0,
+        "error_catch_rate": 0.08519751841156233
+      },
+      "oracle": {
+        "errors_caught": 12473.0,
+        "error_catch_rate": 0.17234327718900694
+      },
+      "efficiency_gain_ratio": 1.5110282192669477
+    },
+    "20%": {
+      "budget_fraction": 0.2,
+      "patches_reviewed": 10,
+      "uncertainty_guided": {
+        "errors_caught": 19393.0,
+        "residual_errors": 52980.0,
+        "error_catch_rate": 0.2679590455003938
+      },
+      "random": {
+        "errors_caught": 13736.4,
+        "residual_errors": 58636.6,
+        "error_catch_rate": 0.18980006355961476
+      },
+      "oracle": {
+        "errors_caught": 23367.0,
+        "error_catch_rate": 0.322869025741644
+      },
+      "efficiency_gain_ratio": 1.4117963949797618
+    },
+    "30%": {
+      "budget_fraction": 0.3,
+      "patches_reviewed": 15,
+      "uncertainty_guided": {
+        "errors_caught": 27608.0,
+        "residual_errors": 44765.0,
+        "error_catch_rate": 0.38146822710126704
+      },
+      "random": {
+        "errors_caught": 20913.2,
+        "residual_errors": 51459.8,
+        "error_catch_rate": 0.2889641164522681
+      },
+      "oracle": {
+        "errors_caught": 32840.0,
+        "error_catch_rate": 0.45376038025230403
+      },
+      "efficiency_gain_ratio": 1.3201231757932788
+    },
+    "50%": {
+      "budget_fraction": 0.5,
+      "patches_reviewed": 25,
+      "uncertainty_guided": {
+        "errors_caught": 43177.0,
+        "residual_errors": 29196.0,
+        "error_catch_rate": 0.596589888494328
+      },
+      "random": {
+        "errors_caught": 35253.4,
+        "residual_errors": 37119.6,
+        "error_catch_rate": 0.4871070703162782
+      },
+      "oracle": {
+        "errors_caught": 48228.0,
+        "error_catch_rate": 0.6663811089771047
+      },
+      "efficiency_gain_ratio": 1.2247612996193273
+    }
+  }
+}

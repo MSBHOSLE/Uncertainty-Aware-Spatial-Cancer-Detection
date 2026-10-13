@@ -1,0 +1,82 @@
+project:
+  name: "Reliable Tumor Microenvironment Mapping: Uncertainty-Guided Spatial Cell Segmentation"
+  research_title: "Uncertainty-Guided Reliability of Cellular Spatial Biomarkers Under Cross-Tissue Distribution Shift"
+  version: "1.0.0"
+  random_seed: 42
+
+dataset:
+  name: "PanNuke-Histopathology"
+  image_size: [256, 256]
+  in_channels: 3
+  num_classes: 6
+  class_names:
+    0: "Background"
+    1: "Neoplastic"
+    2: "Inflammatory"
+    3: "Connective/Stroma"
+    4: "Dead/Necrotic"
+    5: "Non-neoplastic Epithelial"
+  class_colors:
+    0: [240, 240, 240]  # Background (light grey/white)
+    1: [230, 25, 75]    # Neoplastic (red)
+    2: [60, 180, 75]    # Inflammatory (green)
+    3: [0, 130, 200]    # Connective (blue)
+    4: [145, 30, 180]   # Dead (purple)
+    5: [245, 130, 48]   # Epithelial (orange)
+  
+  tissue_split:
+    in_distribution: ["breast", "colon"]
+    held_out_ood: ["kidney", "liver", "lung"]
+  
+  corruptions:
+    - "stain_variation"
+    - "gaussian_blur"
+    - "tissue_folding"
+    - "low_contrast"
+
+model:
+  architecture: "AttentionUNet_Dropout"
+  encoder_channels: [32, 64, 128, 256]
+  bottleneck_channels: 512
+  dropout_prob: 0.3
+  use_spatial_dropout: true
+  use_attention_gates: true
+
+uncertainty:
+  methods:
+    - "maximum_softmax_probability"
+    - "predictive_entropy"
+    - "mc_dropout"
+    - "deep_ensemble"
+  mc_samples: 15
+  ensemble_size: 3
+  temperature: 1.0
+
+spatial_tme:
+  knn_k: 5
+  kde_bandwidth: 20.0
+  delaunay_max_edge_length: 60.0
+  mixing_radius_um: 50.0
+  biomarkers:
+    - "total_cell_density"
+    - "mean_nearest_neighbor_distance"
+    - "tumor_infiltrating_lymphocyte_ratio"
+    - "stroma_to_tumor_ratio"
+    - "cellular_graph_clustering_coefficient"
+    - "spatial_mixing_score"
+
+human_in_the_loop:
+  review_budgets: [0.05, 0.10, 0.20, 0.30, 0.50]
+  ranking_strategies:
+    - "random"
+    - "uncertainty_guided"
+    - "heuristic_stain"
+
+training:
+  batch_size: 8
+  epochs: 20
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  device: "auto"  # Auto detects mps or cpu
+  checkpoint_dir: "experiments/checkpoints"
+  output_dir: "reports"

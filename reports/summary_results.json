@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "title": "Uncertainty-Guided Reliability of Cellular Spatial Biomarkers Under Cross-Tissue Distribution Shift",
+    "device": "mps",
+    "total_runtime_seconds": 80.60542488098145,
+    "timestamp": "2026-10-13 17:30:57"
+  },
+  "addition_1_tme_spatial_stability": {
+    "uncertainty_vs_density_instability": {
+      "pearson_r": 0.5990257742808458,
+      "p_value": 0.0004695233977744548
+    },
+    "uncertainty_vs_nnd_instability": {
+      "pearson_r": 0.5084472325572286,
+      "p_value": 0.004119282485450549
+    },
+    "uncertainty_vs_graph_clustering_instability": {
+      "pearson_r": 0.3038846361086548,
+      "p_value": 0.10255475491601435
+    },
+    "uncertainty_vs_mixing_score_instability": {
+      "pearson_r": 0.4207474435054602,
+      "p_value": 0.020599183360878362
+    },
+    "uncertainty_vs_density_ground_truth_error": {
+      "pearson_r": 0.1649081865885291
+    },
+    "uncertainty_vs_nnd_ground_truth_error": {
+      "pearson_r": 0.15679936156382795
+    }
+  },
+  "addition_2_uncertainty_methods": {
+    "Maximum_Softmax_Probability": {
+      "mean_dice": 0.5744187642748806,
+      "foreground_dice": 0.489866942222584,
+      "ece": 0.050283511296890064,
+      "brier_score": 0.2549397647380829,
+      "error_auroc": 0.8651434589533944,
+      "error_auprc": 0.7010627336412417,
+      "error_fpr95": 0.5594486611056837,
+      "latency_ms_per_patch": 47.089762687683105,
+      "forward_passes": 1
+    },
+    "Predictive_Entropy": {
+      "mean_dice": 0.5744187642748806,
+      "foreground_dice": 0.489866942222584,
+      "ece": 0.050283511296890064,
+      "brier_score": 0.2549397647380829,
+      "error_auroc": 0.8601525089878312,
+      "error_auprc": 0.6766983620646237,
+      "error_fpr95": 0.5559609944170443,
+      "latency_ms_per_patch": 47.089762687683105,
+      "forward_passes": 1
+    },
+    "Monte_Carlo_Dropout_Variance": {
+      "mean_dice": 0.5748697304110845,
+      "foreground_dice": 0.49039998225135506,
+      "ece": 0.05337941357361203,
+      "brier_score": 0.25559860467910767,
+      "error_auroc": 0.7544671480612143,
+      "error_auprc": 0.4404590410481326,
+      "error_fpr95": 0.7565295237141283,
+      "latency_ms_per_patch": 244.2051649093628,
+      "forward_passes": 15
+    },
+    "Monte_Carlo_Dropout_Mutual_Info": {
+      "mean_dice": 0.5748697304110845,
+      "foreground_dice": 0.49039998225135506,
+      "ece": 0.05337941357361203,
+      "brier_score": 0.25559860467910767,
+      "error_auroc": 0.718488951172849,
+      "error_auprc": 0.4138008750639298,
+      "error_fpr95": 0.8451202263083452,
+      "latency_ms_per_patch": 244.2051649093628,
+      "forward_passes": 15
+    },
+    "Deep_Ensembles": {
+      "mean_dice": 0.6939924672910608,
+      "foreground_dice": 0.632997081836204,
+      "ece": 0.1338719054878475,
+      "brier_score": 0.23068344593048096,
+      "error_auroc": 0.6690016203834089,
+      "error_auprc": 0.2222618746115353,
+      "error_fpr95": 0.8336841739009412,
+      "latency_ms_per_patch": 51.798157691955566,
+      "forward_passes": 3
+    }
+  },
+  "addition_3_distribution_shifts": {
+    "segmentation_degradation": {
+      "id": {
+        "mean_dice": 0.5746890537776954,
+        "mean_iou": 0.5150413718672312,
+        "foreground_dice": 0.4901831695310458,
+        "foreground_iou": 0.41915917006804804,
+        "per_class_dice": {
+          "0": 0.9972184750109437,
+          "1": 0.9065615715757981,
+          "2": 0.7080732386811216,
+          "3": 0.8362810373983091,
+          "4": 0.0,
+          "5": 0.0
+        },
+        "per_class_iou": {
+          "0": 0.9944523808631467,
+          "1": 0.8290924738051143,
+          "2": 0.5480753707418188,
+          "3": 0.7186280057933071,
+          "4": 0.0,
+          "5": 0.0
+        }
+      },
+      "cross_organ": {
+        "mean_dice": 0.5414477963270621,
+        "mean_iou": 0.46928980032927264,
+        "foreground_dice": 0.4502542867109188,
+        "foreground_iou": 0.3641789573430575,
+        "per_class_dice": {
+          "0": 0.9974153444077788,
+          "1": 0.8489870348797013,
+          "2": 0.6563552893424373,
+          "3": 0.7459291093324554,
+          "4": 0.0,
+          "5": 0.0
+        },
+        "per_class_iou": {
+          "0": 0.9948440152603482,
+          "1": 0.7375998886259018,
+          "2": 0.4884887233480235,
+          "3": 0.5948061747413624,
+          "4": 0.0,
+          "5": 0.0
+        }
+      },
+      "corrupted": {
+        "mean_dice": 0.2694338787495284,
+        "mean_iou": 0.22371879958409324,
+        "foreground_dice": 0.12577945858037834,
+        "foreground_iou": 0.07332044472275909,
+        "per_class_dice": {
+          "0": 0.9877059795952788,
+          "1": 0.22076370637920065,
+          "2": 0.05586867980414865,
+          "3": 0.3522649067185424,
+          "4": 0.0,
+          "5": 0.0
+        },
+        "per_class_iou": {
+          "0": 0.9757105738907638,
+          "1": 0.12407778953853277,
+          "2": 0.028737091586241433,
+          "3": 0.21378734248902126,
+          "4": 0.0,
+          "5": 0.0
+        }
+      }
+    },
+    "cross_organ_detection": {
+      "Predictive_Entropy": {
+        "auroc": 0.5693333333333334,
+        "fpr95": 0.9,
+        "id_mean_score": 1.362292959690094,
+        "ood_mean_score": 1.366717669169108
+      },
+      "MC_Dropout_Variance": {
+        "auroc": 0.5858666666666666,
+        "fpr95": 0.92,
+        "id_mean_score": 0.0001496439045877196,
+        "ood_mean_score": 0.0001700895004614722
+      },
+      "MC_Mutual_Information": {
+        "auroc": 0.5781333333333333,
+        "fpr95": 0.94,
+        "id_mean_score": 0.00030757401545997707,
+        "ood_mean_score": 0.0003379171200018997
+      },
+      "Energy_Score": {
+        "auroc": 0.5224,
+        "fpr95": 0.94,
+        "id_mean_score": 1.5320342683792114,
+        "ood_mean_score": 1.5350705480575562
+      },
+      "Feature_Mahalanobis": {
+        "auroc": 0.3589333333333333,
+        "fpr95": 0.98,
+        "id_mean_score": 346692.28125,
+        "ood_mean_score": 301404.6875
+      }
+    },
+    "corruption_detection": {
+      "Predictive_Entropy": {
+        "auroc": 0.5556,
+        "fpr95": 0.7,
+        "id_mean_score": 1.362292959690094,
+        "ood_mean_score": 1.3663959193229676
+      },
+      "MC_Dropout_Variance": {
+        "auroc": 0.424,
+        "fpr95": 1.0,
+        "id_mean_score": 0.0001496439045877196,
+        "ood_mean_score": 0.0001959463968887576
+      },
+      "MC_Mutual_Information": {
+        "auroc": 0.38160000000000005,
+        "fpr95": 1.0,
+        "id_mean_score": 0.00030757401545997707,
+        "ood_mean_score": 0.0003153256353107281
+      },
+      "Energy_Score": {
+        "auroc": 0.8628,
+        "fpr95": 0.6,
+        "id_mean_score": 1.5320342683792114,
+        "ood_mean_score": 1.6326274275779724
+      },
+      "Feature_Mahalanobis": {
+        "auroc": 0.8435999999999999,
+        "fpr95": 0.56,
+        "id_mean_score": 346692.28125,
+        "ood_mean_score": 537129.1875
+      }
+    }
+  },
+  "addition_4_human_review_simulation": {
+    "5%": {
+      "budget_fraction": 0.05,
+      "patches_reviewed": 2,
+      "uncertainty_guided": {
+        "errors_caught": 2481.0,
+        "residual_errors": 69892.0,
+        "error_catch_rate": 0.03428074005499288
+      },
+      "random": {
+        "errors_caught": 2870.2,
+        "residual_errors": 69502.8,
+        "error_catch_rate": 0.03965843615713042
+      },
+      "oracle": {
+        "errors_caught": 5329.0,
+        "error_catch_rate": 0.07363243198430354
+      },
+      "efficiency_gain_ratio": 0.8643996934011567
+    },
+    "10%": {
+      "budget_fraction": 0.1,
+      "patches_reviewed": 5,
+      "uncertainty_guided": {
+        "errors_caught": 9317.0,
+        "residual_errors": 63056.0,
+        "error_catch_rate": 0.128735854531386
+      },
+      "random": {
+        "errors_caught": 6166.0,
+        "residual_errors": 66207.0,
+        "error_catch_rate": 0.08519751841156233
+      },
+      "oracle": {
+        "errors_caught": 12473.0,
+        "error_catch_rate": 0.17234327718900694
+      },
+      "efficiency_gain_ratio": 1.5110282192669477
+    },
+    "20%": {
+      "budget_fraction": 0.2,
+      "patches_reviewed": 10,
+      "uncertainty_guided": {
+        "errors_caught": 19393.0,
+        "residual_errors": 52980.0,
+        "error_catch_rate": 0.2679590455003938
+      },
+      "random": {
+        "errors_caught": 13736.4,
+        "residual_errors": 58636.6,
+        "error_catch_rate": 0.18980006355961476
+      },
+      "oracle": {
+        "errors_caught": 23367.0,
+        "error_catch_rate": 0.322869025741644
+      },
+      "efficiency_gain_ratio": 1.4117963949797618
+    },
+    "30%": {
+      "budget_fraction": 0.3,
+      "patches_reviewed": 15,
+      "uncertainty_guided": {
+        "errors_caught": 27608.0,
+        "residual_errors": 44765.0,
+        "error_catch_rate": 0.38146822710126704
+      },
+      "random": {
+        "errors_caught": 20913.2,
+        "residual_errors": 51459.8,
+        "error_catch_rate": 0.2889641164522681
+      },
+      "oracle": {
+        "errors_caught": 32840.0,
+        "error_catch_rate": 0.45376038025230403
+      },
+      "efficiency_gain_ratio": 1.3201231757932788
+    },
+    "50%": {
+      "budget_fraction": 0.5,
+      "patches_reviewed": 25,
+      "uncertainty_guided": {
+        "errors_caught": 43177.0,
+        "residual_errors": 29196.0,
+        "error_catch_rate": 0.596589888494328
+      },
+      "random": {
+        "errors_caught": 35253.4,
+        "residual_errors": 37119.6,
+        "error_catch_rate": 0.4871070703162782
+      },
+      "oracle": {
+        "errors_caught": 48228.0,
+        "error_catch_rate": 0.6663811089771047
+      },
+      "efficiency_gain_ratio": 1.2247612996193273
+    }
+  },
+  "addition_5_silent_failures": {
+    "false_positive_hallucinations": {
+      "total_detected": 1,
+      "silent_unflagged": 0,
+      "silent_rate": 0.0,
+      "flagged_rate": 1.0
+    },
+    "false_negative_omissions": {
+      "total_missed": 78,
+      "silent_unflagged": 0,
+      "silent_rate": 0.0,
+      "flagged_rate": 1.0,
+      "small_nuclei_total": 5,
+      "small_nuclei_silent_rate": 0.0
+    },
+    "cell_type_misclassifications": {
+      "total_misdiagnosed": 266,
+      "silent_unflagged": 0,
+      "silent_rate": 0.0,
+      "flagged_rate": 1.0
+    }
+  },
+  "risk_coverage": {
+    "aurc": 0.0937647680515545,
+    "oracle_aurc": 0.02191257298855529,
+    "excess_aurc": 0.0718521950629992
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "summary_correlations": {
+    "uncertainty_vs_density_instability": {
+      "pearson_r": 0.5990257742808458,
+      "p_value": 0.0004695233977744548
+    },
+    "uncertainty_vs_nnd_instability": {
+      "pearson_r": 0.5084472325572286,
+      "p_value": 0.004119282485450549
+    },
+    "uncertainty_vs_graph_clustering_instability": {
+      "pearson_r": 0.3038846361086548,
+      "p_value": 0.10255475491601435
+    },
+    "uncertainty_vs_mixing_score_instability": {
+      "pearson_r": 0.4207474435054602,
+      "p_value": 0.020599183360878362
+    },
+    "uncertainty_vs_density_ground_truth_error": {
+      "pearson_r": 0.1649081865885291
+    },
+    "uncertainty_vs_nnd_ground_truth_error": {
+      "pearson_r": 0.15679936156382795
+    }
+  },
+  "patch_results": [
+    {
+      "patch_index": 0,
+      "organ": "breast",
+      "mean_uncertainty": 9.057232819031924e-05,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.00039673247453465946,
+      "mean_nnd_error": 0.03474388289441421,
+      "clustering_cv": 2.7941784323323606e-16,
+      "mixing_cv": 0.018119378591620685,
+      "region_trust_fraction": 0.375
+    },
+    {
+      "patch_index": 1,
+      "organ": "breast",
+      "mean_uncertainty": 0.00020186082110740244,
+      "density_cv": 0.0,
+      "density_error": 0.457763671875,
+      "mean_nnd_cv": 0.0003451097651553768,
+      "mean_nnd_error": 2.242386343786812,
+      "clustering_cv": 0.0,
+      "mixing_cv": 1.648510528170206e-16,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 2,
+      "organ": "breast",
+      "mean_uncertainty": 8.258085290435702e-05,
+      "density_cv": 0.0,
+      "density_error": 0.457763671875,
+      "mean_nnd_cv": 0.00026993459425236373,
+      "mean_nnd_error": 2.773567071626907,
+      "clustering_cv": 0.0,
+      "mixing_cv": 0.014610660655671352,
+      "region_trust_fraction": 0.125
+    },
+    {
+      "patch_index": 3,
+      "organ": "breast",
+      "mean_uncertainty": 0.00016966229304671288,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.00024006207630898737,
+      "mean_nnd_error": 0.8348025023840933,
+      "clustering_cv": 0.0,
+      "mixing_cv": 3.591892210432226e-16,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 4,
+      "organ": "breast",
+      "mean_uncertainty": 0.00011429019650677219,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.0003248019875431525,
+      "mean_nnd_error": 0.012069680027547491,
+      "clustering_cv": 1.3072561142967927e-16,
+      "mixing_cv": 0.03950782738955797,
+      "region_trust_fraction": 0.25
+    },
+    {
+      "patch_index": 5,
+      "organ": "breast",
+      "mean_uncertainty": 9.18781734071672e-05,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.00024907698345738577,
+      "mean_nnd_error": 0.04191191309696052,
+      "clustering_cv": 0.0,
+      "mixing_cv": 0.016024197755395934,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 6,
+      "organ": "breast",
+      "mean_uncertainty": 0.00022940966300666332,
+      "density_cv": 0.01928731583288514,
+      "density_error": 0.396728515625,
+      "mean_nnd_cv": 0.01598077376129601,
+      "mean_nnd_error": 2.430444458124228,
+      "clustering_cv": 0.011518446444655779,
+      "mixing_cv": 0.015455067966107216,
+      "region_trust_fraction": 0.3125
+    },
+    {
+      "patch_index": 7,
+      "organ": "breast",
+      "mean_uncertainty": 9.040833538165316e-05,
+      "density_cv": 0.0,
+      "density_error": 0.30517578125,
+      "mean_nnd_cv": 0.00015038385644151162,
+      "mean_nnd_error": 2.01673117525284,
+      "clustering_cv": 2.47549176495959e-16,
+      "mixing_cv": 0.030533004357345357,
+      "region_trust_fraction": 0.0625
+    },
+    {
+      "patch_index": 8,
+      "organ": "breast",
+      "mean_uncertainty": 6.606951501453295e-05,
+      "density_cv": 0.0,
+      "density_error": 0.457763671875,
+      "mean_nnd_cv": 0.00019192178245215866,
+      "mean_nnd_error": 3.3389588315998076,
+      "clustering_cv": 0.0,
+      "mixing_cv": 2.4766458378000194e-16,
+      "region_trust_fraction": 0.375
+    },
+    {
+      "patch_index": 9,
+      "organ": "breast",
+      "mean_uncertainty": 0.0002882865956053138,
+      "density_cv": 0.030078050035839143,
+      "density_error": 0.4475911458333335,
+      "mean_nnd_cv": 0.015338402390776603,
+      "mean_nnd_error": 3.4578060750541155,
+      "clustering_cv": 0.00961089863454836,
+      "mixing_cv": 0.04747910740343677,
+      "region_trust_fraction": 0.125
+    },
+    {
+      "patch_index": 10,
+      "organ": "breast",
+      "mean_uncertainty": 0.0001891096035251394,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.00014069127906389677,
+      "mean_nnd_error": 0.027792971068461014,
+      "clustering_cv": 0.0,
+      "mixing_cv": 0.07749829317447678,
+      "region_trust_fraction": 0.0625
+    },
+    {
+      "patch_index": 11,
+      "organ": "breast",
+      "mean_uncertainty": 7.429455581586808e-05,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.00034819095731371117,
+      "mean_nnd_error": 0.03807604286598476,
+      "clustering_cv": 3.3019465890009114e-16,
+      "mixing_cv": 1.8651715478820627e-16,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 12,
+      "organ": "breast",
+      "mean_uncertainty": 0.0001193422795040533,
+      "density_cv": 0.008333310840926846,
+      "density_error": 0.46793619791666696,
+      "mean_nnd_cv": 0.011409950006912951,
+      "mean_nnd_error": 2.9962886788060956,
+      "clustering_cv": 0.004575755917902751,
+      "mixing_cv": 0.007902116142723717,
+      "region_trust_fraction": 0.0
+    },
+    {
+      "patch_index": 13,
+      "organ": "breast",
+      "mean_uncertainty": 9.164540097117424e-05,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.000256990651294474,
+      "mean_nnd_error": 1.741116518792051,
+      "clustering_cv": 1.5242003063421702e-16,
+      "mixing_cv": 1.5812244799949025e-16,
+      "region_trust_fraction": 0.0625
+    },
+    {
+      "patch_index": 14,
+      "organ": "breast",
+      "mean_uncertainty": 0.00021899807325098664,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.00027626014751457685,
+      "mean_nnd_error": 0.00823464367568505,
+      "clustering_cv": 0.0,
+      "mixing_cv": 0.0171107770371861,
+      "region_trust_fraction": 0.125
+    },
+    {
+      "patch_index": 15,
+      "organ": "breast",
+      "mean_uncertainty": 7.302768062800169e-05,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.0003004509557582931,
+      "mean_nnd_error": 2.073442864192426,
+      "clustering_cv": 1.253474778020839e-16,
+      "mixing_cv": 1.1755277720148838e-16,
+      "region_trust_fraction": 0.25
+    },
+    {
+      "patch_index": 16,
+      "organ": "breast",
+      "mean_uncertainty": 0.0002116407558787614,
+      "density_cv": 0.0,
+      "density_error": 0.30517578125,
+      "mean_nnd_cv": 0.00014916155364793365,
+      "mean_nnd_error": 3.3221861367108367,
+      "clustering_cv": 2.732182750932482e-16,
+      "mixing_cv": 4.579660531028928e-16,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 17,
+      "organ": "breast",
+      "mean_uncertainty": 0.00011545635061338544,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.0002847069472903657,
+      "mean_nnd_error": 2.4387762309358614,
+      "clustering_cv": 1.1645671631022696e-16,
+      "mixing_cv": 3.2196421029319035e-16,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 18,
+      "organ": "breast",
+      "mean_uncertainty": 0.000157701171701774,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.0002390841379924067,
+      "mean_nnd_error": 0.030427894519373666,
+      "clustering_cv": 4.550085039273104e-16,
+      "mixing_cv": 0.033751885410395456,
+      "region_trust_fraction": 0.125
+    },
+    {
+      "patch_index": 19,
+      "organ": "breast",
+      "mean_uncertainty": 0.00014404591638594866,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.0003412238620632049,
+      "mean_nnd_error": 0.6394729129389383,
+      "clustering_cv": 3.336515937576184e-16,
+      "mixing_cv": 0.03482483407193218,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 20,
+      "organ": "breast",
+      "mean_uncertainty": 4.9739275709725916e-05,
+      "density_cv": 0.0,
+      "density_error": 0.0,
+      "mean_nnd_cv": 0.00012520538493369088,
+      "mean_nnd_error": 0.012138003208413295,
+      "clustering_cv": 1.5563830540080125e-16,
+      "mixing_cv": 3.4587645469750814e-16,
+      "region_trust_fraction": 0.3125
+    },
+    {
+      "patch_index": 21,
+      "organ": "breast",
+      "mean_uncertainty": 9.835762466536835e-05,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.00024103016104604826,
+      "mean_nnd_error": 1.009133576189658,
+      "clustering_cv": 0.008616248586411197,
+      "mixing_cv": 0.014332817169805409,
+      "region_trust_fraction": 0.25
+    },
+    {
+      "patch_index": 22,
+      "organ": "breast",
+      "mean_uncertainty": 0.0001213034411193803,
+      "density_cv": 0.0,
+      "density_error": 0.6103515625,
+      "mean_nnd_cv": 0.00032844701048440473,
+      "mean_nnd_error": 2.058574002085681,
+      "clustering_cv": 0.007498892043047579,
+      "mixing_cv": 0.00931461631449626,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 23,
+      "organ": "breast",
+      "mean_uncertainty": 0.00027840756229124963,
+      "density_cv": 0.013141799540467326,
+      "density_error": 0.02034505208333348,
+      "mean_nnd_cv": 0.005683821315229325,
+      "mean_nnd_error": 0.02402036667123042,
+      "clustering_cv": 0.0005919396612401262,
+      "mixing_cv": 0.03085789619817863,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 24,
+      "organ": "breast",
+      "mean_uncertainty": 0.00010267823381582275,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.0003765871860579703,
+      "mean_nnd_error": 0.6071570178775332,
+      "clustering_cv": 2.1559110660630285e-16,
+      "mixing_cv": 3.027876847327454e-16,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 25,
+      "organ": "colon",
+      "mean_uncertainty": 0.0001164765126304701,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.0003254369545837654,
+      "mean_nnd_error": 1.0711548025689872,
+      "clustering_cv": 0.004129856118425743,
+      "mixing_cv": 0.03754496003486958,
+      "region_trust_fraction": 0.125
+    },
+    {
+      "patch_index": 26,
+      "organ": "colon",
+      "mean_uncertainty": 6.566900265170261e-05,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.0002878876349307526,
+      "mean_nnd_error": 0.9473187151138518,
+      "clustering_cv": 0.0,
+      "mixing_cv": 0.015854457275365167,
+      "region_trust_fraction": 0.125
+    },
+    {
+      "patch_index": 27,
+      "organ": "colon",
+      "mean_uncertainty": 0.0002372907765675336,
+      "density_cv": 0.0,
+      "density_error": 0.30517578125,
+      "mean_nnd_cv": 0.00022954998901556474,
+      "mean_nnd_error": 1.9290108733714284,
+      "clustering_cv": 4.811791394944837e-16,
+      "mixing_cv": 0.03429986148271793,
+      "region_trust_fraction": 0.125
+    },
+    {
+      "patch_index": 28,
+      "organ": "colon",
+      "mean_uncertainty": 8.737435564398766e-05,
+      "density_cv": 0.0,
+      "density_error": 0.152587890625,
+      "mean_nnd_cv": 0.00020795538798839782,
+      "mean_nnd_error": 1.0830850787117292,
+      "clustering_cv": 2.2266266700805304e-16,
+      "mixing_cv": 0.0,
+      "region_trust_fraction": 0.1875
+    },
+    {
+      "patch_index": 29,
+      "organ": "colon",
+      "mean_uncertainty": 0.00011011828610207886,
+      "density_cv": 0.0073509954108874065,
+      "density_error": 0.010172526041666963,
+      "mean_nnd_cv": 0.0029267002115794336,
+      "mean_nnd_error": 0.016389176567255248,
+      "clustering_cv": 0.0030083949822892883,
+      "mixing_cv": 0.02355174984170896,
+      "region_trust_fraction": 0.0625
+    }
+  ]
+}

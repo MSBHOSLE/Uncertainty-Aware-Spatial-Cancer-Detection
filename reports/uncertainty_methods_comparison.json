@@ -1,0 +1,57 @@
+{
+  "Maximum_Softmax_Probability": {
+    "mean_dice": 0.5744187642748806,
+    "foreground_dice": 0.489866942222584,
+    "ece": 0.050283511296890064,
+    "brier_score": 0.2549397647380829,
+    "error_auroc": 0.8651434589533944,
+    "error_auprc": 0.7010627336412417,
+    "error_fpr95": 0.5594486611056837,
+    "latency_ms_per_patch": 47.089762687683105,
+    "forward_passes": 1
+  },
+  "Predictive_Entropy": {
+    "mean_dice": 0.5744187642748806,
+    "foreground_dice": 0.489866942222584,
+    "ece": 0.050283511296890064,
+    "brier_score": 0.2549397647380829,
+    "error_auroc": 0.8601525089878312,
+    "error_auprc": 0.6766983620646237,
+    "error_fpr95": 0.5559609944170443,
+    "latency_ms_per_patch": 47.089762687683105,
+    "forward_passes": 1
+  },
+  "Monte_Carlo_Dropout_Variance": {
+    "mean_dice": 0.5748697304110845,
+    "foreground_dice": 0.49039998225135506,
+    "ece": 0.05337941357361203,
+    "brier_score": 0.25559860467910767,
+    "error_auroc": 0.7544671480612143,
+    "error_auprc": 0.4404590410481326,
+    "error_fpr95": 0.7565295237141283,
+    "latency_ms_per_patch": 244.2051649093628,
+    "forward_passes": 15
+  },
+  "Monte_Carlo_Dropout_Mutual_Info": {
+    "mean_dice": 0.5748697304110845,
+    "foreground_dice": 0.49039998225135506,
+    "ece": 0.05337941357361203,
+    "brier_score": 0.25559860467910767,
+    "error_auroc": 0.718488951172849,
+    "error_auprc": 0.4138008750639298,
+    "error_fpr95": 0.8451202263083452,
+    "latency_ms_per_patch": 244.2051649093628,
+    "forward_passes": 15
+  },
+  "Deep_Ensembles": {
+    "mean_dice": 0.6939924672910608,
+    "foreground_dice": 0.632997081836204,
+    "ece": 0.1338719054878475,
+    "brier_score": 0.23068344593048096,
+    "error_auroc": 0.6690016203834089,
+    "error_auprc": 0.2222618746115353,
+    "error_fpr95": 0.8336841739009412,
+    "latency_ms_per_patch": 51.798157691955566,
+    "forward_passes": 3
+  }
+}
